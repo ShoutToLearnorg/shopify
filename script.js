@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!localStorage.getItem("appActivated")) {
     // Make an AJAX request to your server to notify activation
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://your-server.com/activation-endpoint", true);
+    xhr.open("POST", "http://localhost/shopify%20App/activation-endpoint", true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify({ status: "activated" }));
 
